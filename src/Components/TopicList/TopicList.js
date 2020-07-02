@@ -20,9 +20,9 @@ class TopicList extends Component {
   render() {
     const { posts } = this.state;
     let displayTopics = posts.map(post => {
-      return <li key={post.id}>
+      return (<li key={post.id}>
         <link to={`/post/${post.id}`}>{post.title}</link>
-        </li>;
+        </li> );
     });
     return (
       <div className="TopicList">

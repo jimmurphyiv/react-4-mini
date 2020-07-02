@@ -12,10 +12,10 @@ class Nav extends Component {
         </div>
         <ul>
           <li>
-            <link to='/'>Home</link>
+            <Link to='/'>Home</Link>
             </li>
           <li>
-            <link to='topics'>Topics</link>
+            <Link to='/topics'>Topics</Link>
             </li>
         </ul>
       </div>
