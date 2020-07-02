@@ -12,4 +12,4 @@ export default (
 
         <Route path='/post/:id' component={Post} />
     </Switch>
-)
+);

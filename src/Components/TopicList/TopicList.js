@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import posts from "./../../post_data.json";
-import {link} from "react-router-dom";
+import {Link} from "react-router-dom";
 import "./TopicList.css";
 
 class TopicList extends Component {
@@ -21,7 +21,7 @@ class TopicList extends Component {
     const { posts } = this.state;
     let displayTopics = posts.map(post => {
       return (<li key={post.id}>
-        <link to={`/post/${post.id}`}>{post.title}</link>
+        <Link to={`/post/${post.id}`}>{post.title}</Link>
         </li> );
     });
     return (
